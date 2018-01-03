@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+/* Nav bar */
+.nav {
+  overflow: hidden;
+  background-color: #000;
+  font-family: monospace;
+  color: white;
+}
+
+/*Links inside the navbar*/
+.nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown{
+      float:left;
+      overflow: hidden;
+  }
+  
+  .options {
+      display: block;
+  }
+  
+  .dropdown .options{
+      font-size: 16px; 
+      border: none;
+      outline: none;
+      color: #fff;
+      padding: 14px 16px;
+      background-color: #000;
+  }
+  
+  .nav a:hover, .dropdown:hover .options {
+      background-color: black;
+      color: #fff;
+  }
+  
+  .content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 10px 16px;
+    z-index: 1;
+  }
+  
+  .content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .content a:hover {
+      background-color: #000;
+  }
+  
+  .dropdown:hover .content {
+    display: block;
+  }
+  
+  .numberInput{
+      width: 3em;
+  }

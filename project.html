@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>Audio Visualizer | Shull - Thinn</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="nav">
+        <div class="dropdown">
+            <button class="options">=</button>
+            <div class="content">
+                <a href="/~mzt5441/230/project1/index.html">Home</a>
+                <a href="/~mzt5441/230/project1/documentation.html">Documentation</a>
+                <!-- Customizability Settings -->
+                <p>
+                    Select Song:
+                    <select id="song">
+                        <option value="media/danger59.mp3">Danger 0:59 - Mr. Suicide Sheep</option>
+                        <option value="media/youngandmenace.mp3">Young and Menace - Fall Out Boy</option>
+                        <option value="media/kodokushi.mp3">Kodokushi (孤独死) - Mihka! X Kyoto Black</option>
+                        <option value="media/zenzenzense.mp3">Radwimps - Zenzenzense</option>
+                        <option value="media/pixel-galaxy.mp3">Pixel Galaxy - Snail's House</option>
+                        <option value="media/ramune.mp3">Ramune - Snail's House</option>
+                        <option value="media/wolf.mp3">The Wolf - SIAMÉS</option>
+                    </select>
+                </p>
+                <audio id="mainAudio" src="media/danger59.mp3" controls loop></audio>
+                <p>
+                    Select Style: 
+                    <select id="mode">
+                        <option value="2">Balanced</option>
+                        <option value="0">Classic</option>
+                        <option value="1">Phaser</option>
+                    </select>
+                </p>
+                <p>
+                    Select Division Count: 
+                    <input type="number" class="numberInput" max="10" min="0" value="3" id="divisionCount">
+                </p>
+                <p>
+                    Spinning?
+                    <input type="checkbox" id="spin" checked>
+                    How Fast?
+                    <input type="number" class="numberInput" max="5000" min="0" value="5" id="spinRate">
+                </p>
+                <!-- Color Picker -->
+                <p>Select Colors: </p>
+                <input type="color" id="colorA" value="#2196f3">
+                <input type="color" id="colorB" value="#f44336">
+                <button type="button" id="update">Update</button>
+            </div>
+        </div>
+    </div>
+    <!--<audio id="mainAudio" src="media/danger59.mp3"></audio>-->
+<!-- External libraries -->
+<!-- PIXI.js   |  https://github.com/pixijs/pixi.js?utm_source=html5weekly -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.0/pixi.min.js"></script>
+
+<!-- My JS files -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
